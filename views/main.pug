@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Redirect
+        link(rel="icon",href="assets/logo-square.png")
+        link(rel="stylesheet",href="css/bootstrap.min.css")
+        link(rel="stylesheet",href="css/redirection.css")
+        script(src="js/bootstrap.min.js") 
+    body.text-center
+        main.form-signin.w-100.m-auto
+            form(id="req",name="req",action="",method="post")
+                img.mb-4(src="assets/logo.svg", alt="LOGO",width="72",height="80")
+                h1.h3.mb-3.fw-norsmal Redirect 
+                    case state
+                        when 0
+                            span Page
+                        when 1
+                            span(style="color: green") Reloaded
+                        when 3
+                            span(style="color: darkred") Failed
+                        when 6
+                            span(style="color: darkred") Invalid Index
+                        when 9
+                            span(style="color: darkred") Invalid Key
+                        default
+                            span(style="color: darkred") ???
+                div.form-floating
+                    input(type="text",class="form-control",name="index",id="index",placeholder="Index",required,autofocus)
+                    label(for="index") Index
+                div.form-floating
+                    input(type="text",class="form-control",name="key",id="key",placeholder="Key")
+                    label(for="key") Key
+                br
+                button.w-100.btn.btn-lg.btn-primary(type="submit") Submit
+            p.mt-5.mb-3.text-muted
+                a(href="?reload=true") &circlearrowleft;
+                | rhynia.top

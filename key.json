@@ -1,0 +1,14 @@
+[
+    {
+        "index": "dummy",
+        "redirect": "/"
+    },
+    {
+        "index": "ddd",
+        "redirect": "/"
+    },
+    {
+        "index": "bing",
+        "redirect": "https://cn.bing.com/"
+    }
+]
