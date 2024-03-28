@@ -1,7 +1,8 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var pug = require('pug');
-var fs = require('fs');
+const express = require('express');
+const bodyParser = require('body-parser');
+const pug = require('pug');
+const fs = require('fs');
+const figlet = require("figlet");
 
 var app = express();
 
@@ -52,6 +53,13 @@ app.post('/', urlencodedParser, (req, res) => {
 var server = app.listen('14444', function () {
     const host = server.address().address;
     const port = server.address().port;
+    console.log(
+        figlet.textSync("Redirect", {
+            font: "script",
+            horizontalLayout: "default",
+            verticalLayout: "default"
+        })
+    );
     console.log('# Server init at %s:%s', host, port);
     readKeysets();
 })
