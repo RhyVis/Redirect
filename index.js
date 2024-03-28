@@ -83,6 +83,7 @@ function readKeysets() {
     fs.readFile('./key.json', 'utf-8', (err, data) => {
         if (err) {
             console.log(err);
+            keysets.push(new Keyset({index: 'dummy'}));
             return 3;
         }
 

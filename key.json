@@ -1,11 +1,7 @@
 [
     {
-        "index": "dummy",
-        "redirect": "/"
-    },
-    {
-        "index": "ddd",
-        "redirect": "/"
+        "index": "bilibili",
+        "redirect": "https://www.bilibili.com/"
     },
     {
         "index": "bing",
