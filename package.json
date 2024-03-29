@@ -2,10 +2,11 @@
   "name": "redirection",
   "version": "1.0.0",
   "description": "A simple redirecting server",
-  "main": "index.js",
-  "module": "redirect",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "node index.js"
+    "serve": "node app",
+    "test": "node app"
   },
   "author": "Rhynia",
   "license": "LGPL-3.0-or-later",
