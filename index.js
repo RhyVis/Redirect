@@ -55,7 +55,7 @@ var server = app.listen('14444', function () {
     const port = server.address().port;
     console.log(
         figlet.textSync("Redirect", {
-            font: "script",
+            font: "3D Diagonal",
             horizontalLayout: "default",
             verticalLayout: "default"
         })
