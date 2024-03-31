@@ -2,8 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import 'pug';
 import figlet from 'figlet';
-import {readKeysets, compareKeysets} from './modules/utils.js';
-import {KeyChallenge, Type} from './modules/objects.js';
+import { readKeysets, compareKeysets } from './modules/utils.js';
+import { KeyChallenge, Type } from './modules/objects.js';
 
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
@@ -24,7 +24,7 @@ app.get('/', (req, res, _) => {
     } else {
         type = new Type(0);
     }
-    
+
     res.render('main', type);
 })
 

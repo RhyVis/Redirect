@@ -1,6 +1,7 @@
 [
     {
         "index": "bilibili",
+        "alias": ["bili"],
         "redirect": "https://www.bilibili.com/"
     },
     {
